@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analysis Result</title>
+</head>
+<body>
+    <h2>Resume Analysis Report</h2>
+    <p><b>Skills Found:</b> {{ skills }}</p>
+    <p><b>Resume Rating:</b> {{ rating }}/10</p>
+    <p><b>Suggestions:</b></p>
+    <ul>
+        {% for s in suggestions %}
+        <li>{{ s }}</li>
+        {% endfor %}
+    </ul>
+    <p><b>Generated Summary:</b> {{ summary }}</p>
+</body>
+</html>
